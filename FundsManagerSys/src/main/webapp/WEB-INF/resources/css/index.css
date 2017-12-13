@@ -1,0 +1,798 @@
+h3
+{
+    margin: 0;
+    padding: 0;
+    font-weight:600;    /*字体粗细*/
+    color: #333333;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+ul,li{
+    padding:0px;
+    margin:0px;
+}
+
+/***************************************布局*************************************************/
+
+.index_div{
+    width: 100%;
+    height:100%
+    position:relative;
+}
+
+.index_top{
+    width:100%;
+    height:10%;
+    top:0;
+    left: 0;
+    margin:0px auto;
+    background-color:#B8B8B8;
+    position:absolute;
+}
+
+.index_nav{
+    width:10%;
+    height: 90%;
+    top:10%;
+    left: 0;
+    margin:0px auto;
+    background-color:#C8C8C8;
+    position: absolute;
+}
+
+.index_matter{
+    width:90%;
+    height: 90%;
+    left:10%;
+   	top:10%;
+    margin:0px auto;
+   
+    background-color:#E0E0E0;
+    position: absolute;
+}
+/******************************************************************************************/
+
+/***************************************top div设置****************************************/
+        .index_top label[class="systemTitle"]{
+            left:45%;       /*对标题label的位置设置*/
+            top:20%;
+            position:absolute;
+            font-size:25px;     /*显示字体的大小*/
+            font-weight:bold;   /*显示字体的样式：加粗、黑体*/
+            color:#444;         /*显示字体的颜色*/
+        }
+/******************************************************************************************/
+
+/***************************************右侧图像 li的设置****************************************/
+#logo
+{
+    margin-bottom: 4em;     /*下外边距*/
+    left: 30%;
+    top:5%;
+    position: relative;
+
+}
+
+#logo h3
+{
+    display: block;
+}
+
+#logo a
+{
+    text-decoration: none;
+    color: #444;
+}
+
+#logo span
+{
+    padding-right: 0.5em;       /*右内边距*/
+    text-transform: uppercase;  /*英文单词中控制字母开头大小写，这里定义单词全部大写*/
+    font-size: 0.90em;
+    color: rgba(255,255,255,0.3);
+}
+
+#logo span a
+{
+    color: #444444;
+}
+
+#logo img
+{
+    display: inline-block;      /*元素生成内框的类型*/
+    margin-bottom: 1em;         /*外底边距*/
+    border-radius: 50%;         /*图片圆角边框*/
+    max-width: 40%;
+}
+
+/*右侧设置菜单*/
+#menu
+{
+}
+
+#menu ul
+{
+    left: 0;
+    top:0;
+    position: relative;
+}
+
+#menu ul li
+{
+    border-top: 1px solid rgba(0,0,205,0.1);      /*每一个li之间有一条线区分*/
+    list-style: none;       /*li前面的黑点去掉*/
+    left: 1px;      		/*设置为li和ul同大小*/
+    top:1px;
+    position: relative;
+}
+
+#menu li label, #menu li span
+{
+    display: block;
+    padding: 2em 1.5em;
+    text-align: center;
+    text-decoration:  none;         /*定义文本的修饰:none为标准文本*/
+    font-weight: 600;
+    font-size:0.9em;
+    color: #444;       
+
+}
+#menu ul li.selected{
+    background-color:wheat;
+}
+#menu li:hover{
+    background-color:#E8E8E8;         /*鼠标悬浮在上面时*/
+}
+#menu li:active{
+    background-color:#B8B8B8;         /*点击时*/
+}
+#menu li:visited{
+    background-color:#E8E8E8;         /*访问过后的颜色*/
+}
+#menu li:link{
+    background-color:#E8E8E8;         /*平时状态颜色*/
+}
+/******************************************************************************************/
+
+/***************************************右侧主体部分--首页****************************************/
+
+.inform_user{
+    
+}
+.inform_user label[class="inform_id"],label[class="inform_pre"],label[class="inform_ed"],label[class="inform_remain"]{
+    font-size:15px;     /*label中内容字体的大小*/
+    color:#444;         /*label中内容的颜色,灰色*/
+}
+.inform_user label[class="inform_id"]{
+    left:20%;
+    top:35%;
+    position: absolute;
+}
+.inform_user label[class="inform_pre"]{
+    left:36%;
+    top:35%;
+    position: absolute;
+}
+.inform_user label[class="inform_ed"]{
+    left:52%;
+    top:35%;
+    position: absolute;
+}
+.inform_user label[class="inform_remain"]{
+    left:68%;
+    top:35%;
+    position: absolute;
+}
+
+
+
+.inform_user label[class="number_id"],label[class="number_pre"],label[class="number_ed"],label[class="number_remain"]{
+    font-size:17px;     /*label中内容字体的大小*/
+    color:#444;         /*label中内容的颜色,灰色*/
+    font-style: italic;
+}
+.inform_user label[class="number_id"]{
+    left:18.5%;
+    top:70%;
+    position: absolute;
+}
+.inform_user label[class="number_pre"]{
+    left:36%;
+    top:70%;
+    position: absolute;
+}
+.inform_user label[class="number_ed"]{
+    left:52.5%;
+    top:70%;
+    position: absolute;
+}
+.inform_user label[class="number_remain"]{
+    left:68.5%;
+    top:70%;
+    position: absolute;
+}
+
+/******************************************************************************************/
+
+
+/***************************************右侧主体部分--表单****************************************/
+
+.bill_form_css{
+    border-width: 1px;
+
+    left:1.4%;   /*距离左边界的位置*/
+    top:1.4%;    /*距离上边界的位置*/
+
+    width:97.3%;      /*表单自身的宽度*/
+    height:93.5%;    /*表单自身的高度*/
+
+    /*background-color:#DCDCDC;   !*定义表单颜色:灰色*!*/
+    background-color:#C8C8C8;   /*定义表单颜色:白色*/
+    position: absolute;     /*相对定位，始终占浏览器相同的px*/
+    margin-top: 10px;
+    border-radius:10px;
+}
+
+/*1、对表单上方的标题进行设置*/
+.bill_form_css label[class="bill_title"]{
+    left:45%;       /*对标题label的位置设置*/
+    top:3%;
+    position:absolute;  /*必须设置为relative，不然上面left和height不能使用*/
+    font-size:20px;     /*显示字体的大小*/
+    color:#444;         /*显示字体的颜色*/
+}
+
+
+/*3、输入框前面label的设置*/
+.bill_form_css label[id="cost_speMat"], label[id="cost_inform"],label[id="cost_travel"],label[id="cost_office"], label[id="cost_post"],label[id="cost_meeting"],label[id="cost_other"]{
+    font-size:15px;     /*label中内容字体的大小*/
+    color:#444;         /*label中内容的颜色,灰色*/
+}
+
+.bill_form_css label[id="cost_title"]{
+    left:45%;       /*对标题label的位置设置*/
+    top:90px;
+    position:absolute;  /*必须设置为relative，不然上面left和height不能使用*/
+    font-size:16px;     /*显示字体的大小*/
+    color:#444;         /*显示字体的颜色*/
+    margin-left: 12px;
+    margin-top: 10px;
+}
+
+.bill_form_css label[id="cost_speMat"]{
+    left: 5%;  
+    top:30%;
+    position: absolute;     
+}
+.bill_form_css label[id="cost_travel"]{
+	left: 40%;  
+    top:30%;
+    position: absolute; 
+}
+.bill_form_css label[id="cost_inform"]{
+	left: 70%;  
+    top:30%;
+    position: absolute;
+}
+.bill_form_css label[id="cost_meeting"]{
+	left: 7%;  
+    top:45%;
+    position: absolute;
+}
+.bill_form_css label[id="cost_post"]{
+	left: 40%;  
+    top:45%;
+    position: absolute;
+}
+.bill_form_css label[id="cost_office"]{
+	left: 70%;  
+    top:45%;
+    position: absolute;
+}
+
+.bill_form_css label[id="cost_other"]{
+    left: 6%;  /*label相对于表单的位置,与上面输入框的位置做对比*/
+    top:60%;
+    position: absolute;     /*相对上一个/前一个的定位*/
+}
+
+
+.bill_form_css input[id="input_cost_speMat"]{
+    left: 13%; 
+    top:29%;        
+    position: absolute;   
+}
+.bill_form_css input[id="input_cost_travel"]{
+	left: 45%; 
+    top:29%;        
+    position: absolute; 
+}
+.bill_form_css input[id="input_cost_inform"]{
+	left: 75%; 
+    top:29%;        
+    position: absolute; 
+}
+.bill_form_css input[id="input_cost_meeting"]{
+	left: 13%; 
+    top:44%;        
+    position: absolute;  
+}
+.bill_form_css input[id="input_cost_post"]{
+	left: 45%; 
+    top:44%;        
+    position: absolute;
+}
+.bill_form_css input[id="input_cost_office"]{
+	left: 75%; 
+    top:44%;        
+    position: absolute;
+}
+
+.bill_form_css input[id="input_cost_other"]{
+    left: 13%;      /*根据表单的宽度进行设置，从当前表单的28%宽度开始*/
+    top:59%;        /*距离表单上边距30%*/
+    position:absolute;     /*相对上一个/前一个的定位*/
+}
+
+
+/*4、对输入框进行样式修改*/
+.bill_form_css input[id="input_cost_travel"],input[id="input_cost_inform"],input[id="input_cost_office"],input[id="input_cost_post"],input[id="input_cost_other"],input[id="input_cost_speMat"],input[id="input_cost_meeting"]{
+    width:250px;         /*输入框自身的宽度，相对于表单宽度*/
+    height: 30px;       /*输入框自身的高度*/
+
+    font-size:15px;     /*输入框中内容字体的大小*/
+
+    color:#444;         /*输入框中内容的颜色,灰色*/
+
+    /*设置为none以便浏览器在我们的输入中添加不必要的轮廓*/
+    outline:none;       /*outline （轮廓）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用。*/
+
+    border:1px solid rgba(0,0,0,.49);       /*输入框边框的大小，实线，rgba（red,green,blue,a为透明度）,透明度处于0-1之间*/
+
+    -webkit-background-clip: padding-box;   /*background-clip 规定背景的绘制区域,padding-box为内容被裁减到内边距框*/
+    background-clip: padding-box;
+    border-radius:6px;      /*圆角功能，使输入框角变圆润*/
+
+    padding:5px;       /*输入框中光标位置*/
+
+    /*定义渐变色，支持几种不同的浏览器*/
+    background-image:-webkit-linear-gradient(bottom,#FFFFFF 0%,#F2F2F2 100%);
+    background-image:-moz-linear-gradient(bottom,#FFFFFF 0%,#F2F2F2 100%);
+    background-image:-ms-linear-gradient(bottom,#FFFFFF 0%,#F2F2F2 100%);
+    background-image:-o-linear-gradient(bottom,#FFFFFF 0%,#F2F2F2 100%);
+
+    -webkit-box-shadow:inset 0 2px 0 #d9d9d9;   /*边框：阴影水平偏移值（可取正负值）；阴影垂直偏移值（可取正负值）；阴影边框；阴影模糊值；阴影颜色 */
+    box-shadow:inset 0 2px 0 #d9d9d9;
+}
+.bill_form_css input[id="input_cost_speMat"],.bill_form_css input[id="input_cost_meeting"] {
+    width: 250px; /*输入框自身的宽度，相对于表单宽度*/
+    height: 30px; /*输入框自身的高度*/
+
+    font-size: 15px; /*输入框中内容字体的大小*/
+
+    color: #444; /*输入框中内容的颜色,灰色*/
+
+    /*设置为none以便浏览器在我们的输入中添加不必要的轮廓*/
+    outline: none; /*outline （轮廓）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用。*/
+
+    border: 1px solid rgba(0, 0, 0, .49); /*输入框边框的大小，实线，rgba（red,green,blue,a为透明度）,透明度处于0-1之间*/
+
+    -webkit-background-clip: padding-box; /*background-clip 规定背景的绘制区域,padding-box为内容被裁减到内边距框*/
+    background-clip: padding-box;
+    border-radius: 6px; /*圆角功能，使输入框角变圆润*/
+
+    padding: 5px; /*输入框中光标位置*/
+
+    /*定义渐变色，支持几种不同的浏览器*/
+    background-image: -webkit-linear-gradient(bottom, #FFFFFF 0%, #F2F2F2 100%);
+    background-image: -moz-linear-gradient(bottom, #FFFFFF 0%, #F2F2F2 100%);
+    background-image: -ms-linear-gradient(bottom, #FFFFFF 0%, #F2F2F2 100%);
+    background-image: -o-linear-gradient(bottom, #FFFFFF 0%, #F2F2F2 100%);
+
+    -webkit-box-shadow: inset 0 2px 0 #d9d9d9; /*边框：阴影水平偏移值（可取正负值）；阴影垂直偏移值（可取正负值）；阴影边框；阴影模糊值；阴影颜色 */
+    box-shadow: inset 0 2px 0 #d9d9d9;
+}
+
+
+.bill_form_css input[type="text"]:focus{
+    -webkit-box-shadow:inset 0 2px 0 #d9d9d9;   /*聚焦是样式*/
+    box-shadow:inset 0 2px 0 #d9d9d9;
+}
+.bill_form_css input:first-child{
+    margin-top: 0px;    /*first-child选择器，确保margin-top第一个输入被设置为零。这样，第一个输入值将始终位于表单的顶部*/
+}
+
+
+.bill_form_css input[id="commit"]{
+	left:45%;
+    top:82%;
+    position: absolute;
+    width:10%;          /*提交按钮的宽度和高度，相对于表单宽度和高度*/
+    height:35px;
+    font-size:18px;
+    background-color:#5466da;       /*按钮背景颜色*/
+    background-image:-webkit-linear-gradient(bottom,#5466da 0%,#768ee4 100%);   /*设置整个框中的渐变色*/
+    background-image:-moz-linear-gradient(bottom,#5466da 0%,#768ee4 100%);
+    background-image:-ms-linear-gradient(bottom,#5466da 0%,#768ee4 100%);
+    background-image:-o-linear-gradient(bottom,#5466da 0%,#768ee4 100%);
+    -webkit-box-shadow:inset 0px 1px 0px #9ab1ec;   /*按钮框阴影设置*/
+    box-shadow:inset 0px 1px 0px #9ab1ec;
+}
+.record_css input[id="page_up"]{
+	left:32%;
+    top:86%;
+     position: absolute;
+    width:6%;
+    height:30px;
+    font-size:14px;
+    background-color:#C8C8C8; 
+        
+}
+.record_css input[id="page_down"]{
+	left:56%;
+    top:86%;
+    position: absolute;
+    width:6%;
+    height:30px;
+    font-size:14px;
+    background-color:#C8C8C8; 
+    
+}
+.record_css label[id="page_num"]{
+	left:40%;
+    top:88.5%;
+    position: absolute;
+    width:15%;
+    height:35px;
+    fint-size:15px;
+    color:#444;
+}
+
+/*5、对提交按钮的设置*/
+.bill_form_css input[id="commit"],.record_css input[id="page_up"],.record_css input[id="page_down"]{
+    	
+    clear: both;
+    margin-top:10px;
+    color:#fff;         /*文字的颜色*/
+
+         /*文字的大小*/
+    font-weight:bold;   /*文字的样式：粗体字，黑体字*/
+
+    text-shadow:0px -1px 0px #5b6ddc;       /*文字阴影设置*/
+
+    outline:none;
+    border:1px solid rgba(0,0,0,0.49);       /*按钮边框颜色与透明度设置*/
+
+    -webkit-background-clip: padding-box;   /*规定内容的绘制区域，padding-box为内边框距*/
+    background-clip: padding-box;
+
+    border-radius:6px;      /*按钮圆角*/
+
+    cursor:pointer;     /*光标形状，pointer为一只手的形状*/
+}
+.bill_form_css input[id="commit"]:hover{   
+    background-color:#5f73e9;      
+    background-image:-webkit-linear-gradient(bottom,#5f73e9 0%,#859bef 100%);
+    background-image:-moz-linear-gradient(bottom,#5f73e9 0%,#859bef 100%);
+    background-image:-ms-linear-gradient(bottom,#5f73e9 0%,#859bef 100%);
+    background-image:-o-linear-gradient(bottom,#5f73e9 0%,#859bef 100%);
+
+    -webkit-box-shadow: inset 0px 1px 0px #aab9f4;      /*当鼠标放在按钮上个时边框的阴影*/
+    box-shadow: inset 0px 1px 0px #aab9f4;
+}
+.record_css input[id="page_up"]:hover,.record_css input[id="page_down"]:hover{
+	
+	background-color:#D8D8D8;      
+    -webkit-box-shadow: inset 0px 1px 0px #444;      /*当鼠标放在按钮上个时边框的阴影*/
+    box-shadow: inset 0px 1px 0px #444;
+}
+.record_css input[id="page_up"]:active,.record_css input[id="page_down"]:active{
+	background-color:#E0E0E0;
+    -webkit-box-shadow:inset 0px 1px 0px #444;
+    box-shadow:inset 0px 1px 0px #444;
+}
+
+.bill_form_css input[id="commit"]:active{     /*当鼠标点击时样式设置*/
+    background-color:#7588e1;
+    background-image:-webkit-linear-gradient(bottom,#7588e1 0%,#7184df 100%);
+    background-image:-moz-linear-gradient(bottom,#7588e1 0%,#7184df 100%);
+    background-image:-ms-linear-gradient(bottom,#7588e1 0%,#7184df 100%);
+    background-image:-o-linear-gradient(bottom,#7588e1 0%,#7184df 100%);
+
+    -webkit-box-shadow:inset 0px 1px 0px #93a9e9;
+    box-shadow:inset 0px 1px 0px #93a9e9;
+}
+
+.bill_form_css span[id="span_speMat"],span[id="span_travel"],span[id="span_inform"],span[id="span_meeting"],span[id="span_post"],span[id="span_office"],span[id="span_other"]{
+	font-size:13px;
+	color:red;
+}
+.bill_form_css span[id="span_speMat"]{
+	left:14%;
+	top:35%;
+	position:absolute;
+}
+.bill_form_css span[id="span_travel"]{
+	left:46%;
+	top:35%;
+	position:absolute;
+}
+.bill_form_css span[id="span_inform"]{
+	left:76%;
+	top:35%;
+	position:absolute;
+}
+.bill_form_css span[id="span_meeting"]{
+	left:14%;
+	top:50%;
+	position:absolute;
+}
+.bill_form_css span[id="span_post"]{
+	left:46%;
+	top:50%;
+	position:absolute;
+}
+.bill_form_css span[id="span_office"]{
+	left:76%;
+	top:50%;
+	position:absolute;
+}
+.bill_form_css span[id="span_other"]{
+	left:14%;
+	top:65%;
+	position:absolute;
+}
+
+/*保证输入的宽度不变*/
+*{
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+
+/******************************************************************************************/
+
+/***********************************右侧主体部分--查看我的记录表************************************/
+
+.record_css{
+    width:100%;      /*表单自身的宽度*/
+    height: 100%;    /*表单自身的高度*/
+    position: absolute;     /*相对定位，始终占浏览器相同的px*/
+    
+    
+}
+
+.record_css table[class="table_css"]{
+	width:98%;
+	
+	top:3%;
+	left:1%;
+	position:absolute;
+	
+    font-size:14px;    
+    color:#444;
+    background-color:#E8E8E8;
+    border-radius:10px;
+    cellspacing:10px;
+}
+.record_css label[class="record_title"]{
+	top:3%;
+	left:44%;
+	position:absolute;
+	font-size:20px;
+	color:#444;
+}
+td{
+	text-align:center;
+	height:40px;
+}
+th{
+	height:40px;
+}
+
+
+/************************************修改密码服务**********************************************/
+
+.find_pwd{
+    width:95%;      /*表单自身的宽度*/
+    height: 90%;    /*表单自身的高度*/
+
+    position: absolute;     /*相对定位，始终占浏览器相同的px*/
+          
+}
+
+.find_form{
+	border-width: 1px;
+
+    left:1.5%;   /*距离左边界的位置*/
+    top:1.5%;    /*距离上边界的位置*/
+
+    width:102.5%;      /*表单自身的宽度*/
+    height:104%;    /*表单自身的高度*/
+
+    /*background-color:#DCDCDC;   !*定义表单颜色:灰色*!*/
+    background-color:#C8C8C8;   /*定义表单颜色:白色*/
+    position: absolute;     /*相对定位，始终占浏览器相同的px*/
+    margin-top: 10px;
+    border-radius:10px;
+}
+
+
+
+/*1、对表单上方的标题进行设置*/
+.find_form label[class="find_title"]{
+    left:44%;       
+    top:6%;
+
+    width:30%;      
+    height:35px;
+
+    font-size:18px;     
+    font-weight:bold;   
+    color:#444;        
+    position:absolute;  
+
+}
+.find_form label[class="pwd_ed"]{
+	left:34%;       
+    top:27%;
+    position:absolute; 
+}
+.find_form label[class="pwd_new"]{
+	left:35%;       
+    top:38%;
+    position:absolute; 
+}
+.find_form label[class="pwd_renew"]{
+	left:34%;       
+    top:49%;
+    position:absolute; 
+}
+.find_form input[id="input_pwd_ed"]{
+	left:41%;       
+    top:26%;
+    position:absolute; 
+}
+.find_form input[id="input_pwd_new"]{
+	left:41%;       
+    top:37%;
+    position:absolute;
+}
+.find_form input[id="input_pwd_renew"]{
+	left:41%;       
+    top:48%;
+    position:absolute; 
+}
+
+.find_form label[class="pwd_ed"],.find_form label[class="pwd_new"],.find_form label[class="pwd_renew"]{
+    font-size:15px;     /*label中内容字体的大小*/
+    color:#444;         /*label中内容的颜色,灰色*/
+}
+
+
+/*4、对输入框进行样式修改*/
+.find_form input[type="password"]{
+
+    width:20%;         /*输入框自身的宽度，相对于表单宽度*/
+    height: 30px;       /*输入框自身的高度*/
+
+    font-size:15px;     /*输入框中内容字体的大小*/
+
+    color:#444;         /*输入框中内容的颜色,灰色*/
+
+    /*设置为none以便浏览器在我们的输入中添加不必要的轮廓*/
+    outline:none;       /*outline （轮廓）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用。*/
+
+    border:1px solid rgba(0,0,0,.49);       /*输入框边框的大小，实线，rgba（red,green,blue,a为透明度）,透明度处于0-1之间*/
+
+    -webkit-background-clip: padding-box;   /*background-clip 规定背景的绘制区域,padding-box为内容被裁减到内边距框*/
+    background-clip: padding-box;
+    border-radius:6px;      /*圆角功能，使输入框角变圆润*/
+
+    background-color:#fff;  /*输入框整个背景颜色，白色*/
+
+    padding:5px;       /*输入框中光标位置*/
+
+    /*定义渐变色，支持几种不同的浏览器*/
+    background-image:-webkit-linear-gradient(bottom,#FFFFFF 0%,#F2F2F2 100%);
+    background-image:-moz-linear-gradient(bottom,#FFFFFF 0%,#F2F2F2 100%);
+    background-image:-ms-linear-gradient(bottom,#FFFFFF 0%,#F2F2F2 100%);
+    background-image:-o-linear-gradient(bottom,#FFFFFF 0%,#F2F2F2 100%);
+
+    -webkit-box-shadow:inset 0 2px 0 #d9d9d9;   /*边框：阴影水平偏移值（可取正负值）；阴影垂直偏移值（可取正负值）；阴影边框；阴影模糊值；阴影颜色 */
+    box-shadow:inset 0 2px 0 #d9d9d9;
+}
+.find_form input[type="password"]:focus{
+    -webkit-box-shadow:inset 0 2px 0 #d9d9d9;   /*聚焦是样式*/
+    box-shadow:inset 0 2px 0 #d9d9d9;
+}
+.find_form input:first-child{
+    margin-top: 0px;    /*first-child选择器，确保margin-top第一个输入被设置为零。这样，第一个输入值将始终位于表单的顶部*/
+}
+
+
+/*5、对提交按钮的设置*/
+.find_form input[type="button"]{
+    width:12%;          /*提交按钮的宽度和高度，相对于表单宽度和高度*/
+    height:35px;
+
+    left:43%;
+    top:70%;
+
+    margin-top:20px;     /*与上一个边框之间的距离*/
+
+    position: absolute;     /*这里必须为relative，不然上面的left和top不起作用*/
+
+    color:#fff;         /*文字的颜色*/
+
+    font-size:16px;     /*文字的大小*/
+    font-weight:bold;   /*文字的样式：粗体字，黑体字*/
+
+    text-shadow:0px -1px 0px #5b6ddc;       /*文字阴影设置*/
+
+    outline:none;
+    border:1px solid rgba(0,0,0,0.49);       /*按钮边框颜色与透明度设置*/
+
+    -webkit-background-clip: padding-box;   /*规定内容的绘制区域，padding-box为内边框距*/
+    background-clip: padding-box;
+
+    border-radius:6px;      /*按钮圆角*/
+
+    background-color:#768ee4;       /*按钮背景颜色*/
+    background-image:-webkit-linear-gradient(bottom,#5466da 0%,#768ee4 100%);   /*设置整个框中的渐变色*/
+    background-image:-moz-linear-gradient(bottom,#5466da 0%,#768ee4 100%);
+    background-image:-ms-linear-gradient(bottom,#5466da 0%,#768ee4 100%);
+    background-image:-o-linear-gradient(bottom,#5466da 0%,#768ee4 100%);
+
+    cursor:pointer;     /*光标形状，pointer为一只手的形状*/
+
+    -webkit-box-shadow:inset 0px 1px 0px #9ab1ec;   /*按钮框阴影设置*/
+    box-shadow:inset 0px 1px 0px #9ab1ec;
+}
+.find_form input[type="button"]:hover{   /*hover:悬浮，指鼠标放在按钮上时*/
+    background-color:#5f73e9;       /*当鼠标放在提交按钮上，一个颜色的转变*/
+    background-image:-webkit-linear-gradient(bottom,#5f73e9 0%,#859bef 100%);
+    background-image:-moz-linear-gradient(bottom,#5f73e9 0%,#859bef 100%);
+    background-image:-ms-linear-gradient(bottom,#5f73e9 0%,#859bef 100%);
+    background-image:-o-linear-gradient(bottom,#5f73e9 0%,#859bef 100%);
+
+    -webkit-box-shadow: inset 0px 1px 0px #aab9f4;      /*当鼠标放在按钮上个时边框的阴影*/
+    box-shadow: inset 0px 1px 0px #aab9f4;
+
+    /*这个margin-top与前一个相关联，前一个为20px,这个为22px，即表示鼠标悬浮在上面时向下平移2px*/
+    margin-top:22px;     /*鼠标放在按钮上时，一个位置的移动，体现一个动态的过程*/
+}
+.find_form input[type="button"]:active{     /*当鼠标点击时样式设置*/
+    background-color:#7588e1;
+    background-image:-webkit-linear-gradient(bottom,#7588e1 0%,#7184df 100%);
+    background-image:-moz-linear-gradient(bottom,#7588e1 0%,#7184df 100%);
+    background-image:-ms-linear-gradient(bottom,#7588e1 0%,#7184df 100%);
+    background-image:-o-linear-gradient(bottom,#7588e1 0%,#7184df 100%);
+
+    -webkit-box-shadow:inset 0px 1px 0px #93a9e9;
+    box-shadow:inset 0px 1px 0px #93a9e9;
+}
+
+.find_form span[id="span_find_ed"],span[id="span_find_new"],span[id="span_find_renew"]{
+	font-size:13px;
+	color:red;
+}
+.find_form span[id="span_find_ed"]{
+	left:56%;
+	top:27%;
+	position:absolute;
+}
+.find_form span[id="span_find_new"]{
+	left:56%;
+	top:38%;
+	position:absolute;
+}
+.find_form span[id="span_find_renew"]{
+	left:56%;
+	top:49%;
+	position:absolute;
+}
