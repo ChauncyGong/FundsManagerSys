@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo.Id;
 import com.google.gson.Gson;
 import com.ifox.fundsManagerSys.entities.User;
 import com.ifox.fundsManagerSys.service.BillService;

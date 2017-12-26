@@ -30,6 +30,7 @@ public class MD5Util {
 	} 
 	
 	// md5加密
+	@SuppressWarnings("restriction")
 	public static String md5(String str) {
 		String s = str;
 		if (s == null) {
